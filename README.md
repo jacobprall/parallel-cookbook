@@ -1,31 +1,47 @@
 # Parallel Cookbook
 
-The following cookbook is designed to get you building with Parallel APIs as quickly as possible. Explore and remix recipes and OSS projects using Parallel, use useful utilities, and try the machine quickstart to get cooking immediately.
+Recipes and full-stack examples for building with [Parallel APIs](https://docs.parallel.ai). Clone this repo and start building — or point your agent at [`AGENTS.md`](./AGENTS.md) for machine-first orientation.
 
-## Recipes & Examples
+## Start here
 
-| Title                           | Description                              | Code                                                                                                        | Demo                                                                                   |
-| ------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Data Enrichment with Supabase   | Real-time enrichment with Edge Functions | [Recipe](typescript-recipes/parallel-supabase-enrichment)                                                   | -                                                                                      |
-| Tasks Playground with Streaming | Using Durable Objects and SSE Events API | [Recipe](https://github.com/parallel-web/parallel-cookbook/tree/main/typescript-recipes/parallel-tasks-sse) | [oss.parallel.ai/tasks-sse](https://oss.parallel.ai/tasks-sse/)                        |
-| Market Analysis Demo            | Deep Research for Market Analysis        | [App Repo](https://github.com/parallel-web/parallel-cookbook/tree/main/python-recipes/market-analysis-demo)                                                                                                 | [market-analysis-demo.parallel.ai](https://market-analysis-demo.parallel.ai/)          |
-| Search Agent                    | AI SDK + Parallel SDK Search API as tool | [Recipe](typescript-recipes/parallel-search-agent)                                                          | [oss.parallel.ai/agent](https://oss.parallel.ai/agent)                                 |
-| Competitive Analysis            | Using Web Enrichment and Reddit MCP      | [App Repo](https://github.com/parallel-web/competitive-analysis-demo/tree/main)                             | [competitive-analsis-demo.parallel.ai](https://competitive-analysis-demo.parallel.ai/) |
+- **New to the Task API?** Read [`docs/task-best-practices.md`](./docs/task-best-practices.md) before writing a schema.
+- **Adding a recipe?** Copy `recipes/_template/` and follow [`CONTRIBUTING.md`](./CONTRIBUTING.md).
+- **Using an agent?** See [`AGENTS.md`](./AGENTS.md) and [`llms.txt`](./llms.txt).
+
+## Recipes
+
+| Recipe | Description | APIs | Language | Demo |
+|---|---|---|---|---|
+| [supabase-enrichment-app](recipes/supabase-enrichment-app/) | Real-time company enrichment with Supabase Edge Functions | Task | TypeScript | — |
+| [daily-insights](recipes/daily-insights/) | Active monitoring with cron triggers, KV, and webhooks | Task | TypeScript | [daily.p0web.com](https://daily.p0web.com) |
+| [tasks-sse](recipes/tasks-sse/) | Task streaming playground with OAuth and SSE | Task, OAuth | TypeScript | [oss.parallel.ai/tasks-sse](https://oss.parallel.ai/tasks-sse/) |
+| [entity-resolution](recipes/entity-resolution/) | AI-powered identity resolution across social platforms | Task, OAuth | TypeScript | [entity-resolution-demo.parallel.ai](https://entity-resolution-demo.parallel.ai) |
+| [search-agent](recipes/search-agent/) | Streaming search agent with Parallel Search as a tool | Search | TypeScript | [oss.parallel.ai/agent](https://oss.parallel.ai/agent) |
+| [fact-checker](recipes/fact-checker/) | Extract claims from text/URLs and verify against web sources | Search, Extract | TypeScript | — |
+| [api-explorer-app](recipes/api-explorer-app/) | Interactive demo of Search, Extract, and Task APIs | Task, Search, Extract | TypeScript | [parallel-vercel-template-cookbook.vercel.app](https://parallel-vercel-template-cookbook.vercel.app/) |
+| [deep-research](recipes/deep-research/) | Interactive market research with Deep Research API | Task | Python | — |
+| [large-scale-tasks](recipes/large-scale-tasks/) | Production batch processing with Task Group API | Task | Python | — |
+| [task-group-temporal](recipes/task-group-temporal/) | Task Groups integrated with Temporal workflows | Task | Python | — |
+| [market-analysis-app](recipes/market-analysis-app/) | Full-stack market research tool with SSE and email | Task | Python | [market-analysis-demo.parallel.ai](https://market-analysis-demo.parallel.ai/) |
+| [vertex-ai-grounding](recipes/vertex-ai-grounding/) | Parallel Search as grounding for Gemini on Vertex AI | Search | Python | — |
 
 ## Community Examples
 
-- [Parallel Spreadsheet](https://github.com/zahidkhawaja/parallel-spreadsheet) by [@chillzaza\_](https://x.com/chillzaza_/status/1958005876918292941) (Vercel, Typescript)
-- [Based People](https://github.com/janwilmake/basedpeople) by [@janwilmake](https://x.com/janwilmake/status/1956061673833300443) (Cloudflare, Typescript)
-- [Scira (10k+ stars)](https://github.com/zaidmukaddam/scira) by [@zaidmukaddam](https://x.com/zaidmukaddam/status/1958583204635439264) (Vercel, Typescript)
+- [Parallel Spreadsheet](https://github.com/zahidkhawaja/parallel-spreadsheet) by [@chillzaza\_](https://x.com/chillzaza_/status/1958005876918292941)
+- [Based People](https://github.com/janwilmake/basedpeople) by [@janwilmake](https://x.com/janwilmake/status/1956061673833300443)
+- [Scira (10k+ stars)](https://github.com/zaidmukaddam/scira) by [@zaidmukaddam](https://x.com/zaidmukaddam/status/1958583204635439264)
 
-## Resources & Utitlies
+## Resources
 
-- https://github.com/janwilmake/parallel-flatten - Utility for getting flat outputs for easier rendering
-
-## Contributing
-
-Built something with Parallel APIs you want to showcase? The Parallel cookbook welcomes community contributions. Also ideas for other recipes are welcome. See [contributing](CONTRIBUTING.md) for more details.
+- [Parallel Documentation](https://docs.parallel.ai)
+- [Get API Keys](https://platform.parallel.ai)
+- [parallel-web (npm)](https://www.npmjs.com/package/parallel-web)
+- [parallel-flatten](https://github.com/janwilmake/parallel-flatten) — utility for flat outputs
 
 ## Machine Quickstart
 
-For the quickest way to get started, we recommend cloning this repo and installing [our MCPs](https://docs.parallel.ai/integrations/mcp/getting-started). In particular, the "llms.txt MCP" is perfect to ask questions about parallel as it will provide the most comprehesive answers because it has easy access to all needed context. The other MCPs are a great way to experiment with our APIs without any coding required.
+Clone this repo and install [our MCPs](https://docs.parallel.ai/integrations/mcp/getting-started). The "llms.txt MCP" provides comprehensive context for asking questions about Parallel. Other MCPs let you experiment with APIs without writing code.
+
+## Contributing
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md).

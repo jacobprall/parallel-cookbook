@@ -1,0 +1,13 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "large-scale-tasks",
+  "title": "Large Scale Batch Tasks",
+  "description": "Production-ready batch processing of CSV files using Task Group API with resume, validation, and three-stage pipeline.",
+  "status": "live",
+  "apis": ["task"],
+  "patterns": ["batch", "task-groups"],
+  "jtbd": ["enrichment"],
+  "languages": ["python"],
+  "deploy": ["cli"],
+  "creators": ["parallel-web"]
+}

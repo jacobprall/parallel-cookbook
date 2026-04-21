@@ -1,0 +1,13 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "fact-checker",
+  "title": "Real-Time Fact Checker",
+  "description": "Extracts verifiable claims from text or URLs and validates them against web sources using Parallel Search and Extract APIs.",
+  "status": "live",
+  "apis": ["search", "extract"],
+  "patterns": ["sse", "agent-tool"],
+  "jtbd": ["fact-checking"],
+  "languages": ["typescript"],
+  "deploy": ["cloudflare-workers"],
+  "creators": ["janwilmake"]
+}

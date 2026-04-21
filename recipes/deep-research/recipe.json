@@ -1,0 +1,13 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "deep-research",
+  "title": "Deep Research",
+  "description": "Interactive market research using Parallel Deep Research API with text and JSON outputs, citations, and webhook integration.",
+  "status": "live",
+  "apis": ["task"],
+  "patterns": ["webhook", "sse"],
+  "jtbd": ["research"],
+  "languages": ["python"],
+  "deploy": ["notebook"],
+  "creators": ["parallel-web"]
+}

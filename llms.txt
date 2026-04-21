@@ -1,0 +1,47 @@
+# Parallel Cookbook
+
+> Recipes and full-stack examples for building with Parallel APIs.
+
+## Quick orientation
+
+- Recipes live in `recipes/<slug>/`. Each has a `recipe.json` with metadata.
+- `docs/task-best-practices.md` — read before writing any Task API schema.
+- `context/task-library.json` — example Task specs for schema design.
+- `context/sdk-types.d.ts` — full TypeScript SDK types.
+- `AGENTS.md` — full agent orientation guide.
+- `CONTRIBUTING.md` — PR checklist and template reference.
+
+## Parallel APIs
+
+- Task API: structured web research with schema-defined outputs
+- Search API: LLM-optimized web search returning relevant excerpts
+- Extract API: targeted structured extraction from URLs
+- FindAll API: entity discovery at scale
+- Monitor API: change detection over time
+- Ingest API: bulk data ingestion
+- MCP: Model Context Protocol integration
+- OAuth Provider: PKCE-based auth for apps
+
+## Recipes
+
+| Slug | Title | APIs | Languages |
+|---|---|---|---|
+| supabase-enrichment-app | Data Enrichment with Supabase | task | typescript |
+| daily-insights | Recurring Tasks and Webhooks | task | typescript |
+| tasks-sse | Task Streaming Playground | task, oauth | typescript |
+| entity-resolution | Person Entity Resolution API | task, oauth | typescript |
+| search-agent | Web Search Agent | search | typescript |
+| fact-checker | Real-Time Fact Checker | search, extract | typescript |
+| api-explorer-app | API Explorer | task, search, extract | typescript |
+| deep-research | Deep Research | task | python |
+| large-scale-tasks | Large Scale Batch Tasks | task | python |
+| task-group-temporal | Task Groups with Temporal | task | python |
+| market-analysis-app | Market Analysis App | task | python |
+| vertex-ai-grounding | Vertex AI Grounding with Parallel Search | search | python |
+
+## Links
+
+- Docs: https://docs.parallel.ai
+- Platform: https://platform.parallel.ai
+- SDK (npm): https://www.npmjs.com/package/parallel-web
+- SDK (PyPI): https://pypi.org/project/parallel-web/

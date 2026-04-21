@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "tasks-sse",
+  "title": "Task Streaming Playground",
+  "description": "Full-featured task manager with OAuth, SSE streaming, and real-time event visualization for all Parallel processors.",
+  "status": "live",
+  "apis": ["task", "oauth"],
+  "patterns": ["sse", "oauth-pkce", "durable-object"],
+  "jtbd": ["starter"],
+  "languages": ["typescript"],
+  "deploy": ["cloudflare-workers"],
+  "demo_url": "https://oss.parallel.ai/tasks-sse/",
+  "creators": ["janwilmake"]
+}

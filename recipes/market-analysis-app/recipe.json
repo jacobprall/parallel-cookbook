@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "market-analysis-app",
+  "title": "Market Analysis App",
+  "description": "Full-stack market research tool with Deep Research, real-time SSE progress, email notifications, and public report library.",
+  "status": "live",
+  "apis": ["task"],
+  "patterns": ["sse", "webhook"],
+  "jtbd": ["research"],
+  "languages": ["python"],
+  "deploy": ["vercel", "flask"],
+  "demo_url": "https://market-analysis-demo.parallel.ai/",
+  "creators": ["parallel-web"]
+}

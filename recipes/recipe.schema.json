@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recipe",
+  "description": "Metadata for a single recipe in parallel-cookbook/recipes/<slug>/. One recipe.json per recipe. The root README recipe index and any future website view are generated from these files.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "title", "description", "status", "apis", "patterns", "jtbd", "languages"],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "description": "Directory name under recipes/. kebab-case. Must match the folder name.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable recipe title."
+    },
+    "description": {
+      "type": "string",
+      "description": "One-sentence summary. Shown in the root README index."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["live", "draft", "deprecated"],
+      "description": "live: ready to use; draft: WIP, may be incomplete; deprecated: kept for history, do not copy."
+    },
+    "apis": {
+      "type": "array",
+      "description": "Parallel APIs this recipe demonstrates.",
+      "items": {
+        "type": "string",
+        "enum": ["task", "search", "extract", "findall", "monitor", "ingest", "mcp", "oauth"]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "patterns": {
+      "type": "array",
+      "description": "Architecture patterns demonstrated.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "sync",
+          "sse",
+          "webhook",
+          "cron",
+          "batch",
+          "task-groups",
+          "agent-tool",
+          "realtime-push",
+          "oauth-pkce",
+          "grounding",
+          "durable-object",
+          "ratelimit"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "jtbd": {
+      "type": "array",
+      "description": "Jobs-to-be-done this recipe covers. Keep to 1-2.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "enrichment",
+          "research",
+          "agent",
+          "monitoring",
+          "resolution",
+          "fact-checking",
+          "starter",
+          "grounding"
+        ]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["typescript", "python"] },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "deploy": {
+      "type": "array",
+      "description": "Deploy targets shown in this recipe.",
+      "items": {
+        "type": "string",
+        "enum": ["cloudflare-workers", "vercel", "supabase-edge", "flask", "cli", "notebook"]
+      },
+      "uniqueItems": true
+    },
+    "demo_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "creators": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "GitHub or X handles of recipe authors."
+    }
+  }
+}

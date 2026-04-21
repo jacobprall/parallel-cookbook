@@ -1,0 +1,13 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "task-group-temporal",
+  "title": "Task Groups with Temporal",
+  "description": "Parallel Task Group API integrated with Temporal workflow orchestration for enterprise-grade batch processing.",
+  "status": "live",
+  "apis": ["task"],
+  "patterns": ["batch", "task-groups"],
+  "jtbd": ["enrichment"],
+  "languages": ["python"],
+  "deploy": ["cli"],
+  "creators": ["parallel-web"]
+}

@@ -1,0 +1,6 @@
+PARALLEL_API_KEY=
+LLM_PROVIDER=cerebras
+CEREBRAS_API_KEY=
+# Or swap to groq:
+# LLM_PROVIDER=groq
+# GROQ_API_KEY=

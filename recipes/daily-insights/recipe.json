@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "daily-insights",
+  "title": "Recurring Tasks and Webhooks",
+  "description": "Active monitoring service using Cloudflare Cron Triggers, KV storage, and Parallel Task webhooks.",
+  "status": "live",
+  "apis": ["task"],
+  "patterns": ["cron", "webhook"],
+  "jtbd": ["monitoring"],
+  "languages": ["typescript"],
+  "deploy": ["cloudflare-workers"],
+  "demo_url": "https://daily.p0web.com",
+  "creators": ["janwilmake"]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
+  "name": "search-agent",
+  "main": "worker.ts",
+  "compatibility_date": "2025-07-14",
+  "observability": { "logs": { "enabled": true } }
+  // Optional: bind KV for rate limiting
+  // "kv_namespaces": [{ "binding": "RATE_LIMIT_KV", "id": "<your-kv-id>" }]
+}

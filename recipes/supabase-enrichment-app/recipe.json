@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "supabase-enrichment-app",
+  "title": "Data Enrichment with Supabase",
+  "description": "Real-time company enrichment pipeline using Supabase Edge Functions, Realtime subscriptions, and Parallel Task API.",
+  "status": "live",
+  "apis": ["task"],
+  "patterns": ["sync", "realtime-push"],
+  "jtbd": ["enrichment"],
+  "languages": ["typescript"],
+  "deploy": ["supabase-edge", "vercel"],
+  "demo_url": "https://parallel-supabase-enrichment.vercel.app",
+  "creators": ["parallel-web"]
+}

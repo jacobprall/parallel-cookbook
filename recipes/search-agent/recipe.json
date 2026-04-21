@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "search-agent",
+  "title": "Web Search Agent",
+  "description": "Streaming search agent using Parallel Search API as a tool with AI SDK. Supports Cerebras and Groq providers.",
+  "status": "live",
+  "apis": ["search"],
+  "patterns": ["sse", "agent-tool", "ratelimit"],
+  "jtbd": ["agent"],
+  "languages": ["typescript"],
+  "deploy": ["cloudflare-workers"],
+  "demo_url": "https://oss.parallel.ai/agent",
+  "creators": ["janwilmake"]
+}

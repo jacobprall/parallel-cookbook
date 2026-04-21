@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "entity-resolution",
+  "title": "Person Entity Resolution API",
+  "description": "AI-powered digital identity resolution across social platforms using Parallel Task API and OAuth Provider.",
+  "status": "live",
+  "apis": ["task", "oauth"],
+  "patterns": ["sync", "oauth-pkce"],
+  "jtbd": ["resolution"],
+  "languages": ["typescript"],
+  "deploy": ["cloudflare-workers"],
+  "demo_url": "https://entity-resolution-demo.parallel.ai",
+  "creators": ["janwilmake"]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "api-explorer-app",
+  "title": "API Explorer",
+  "description": "Interactive Next.js app demonstrating Search, Extract, and Task APIs with real-time SSE streaming.",
+  "status": "live",
+  "apis": ["task", "search", "extract"],
+  "patterns": ["sse", "sync"],
+  "jtbd": ["starter"],
+  "languages": ["typescript"],
+  "deploy": ["vercel"],
+  "demo_url": "https://parallel-vercel-template-cookbook.vercel.app/",
+  "creators": ["parallel-web"]
+}

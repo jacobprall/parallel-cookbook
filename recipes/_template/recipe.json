@@ -1,0 +1,14 @@
+{
+  "$schema": "../recipe.schema.json",
+  "slug": "example-recipe",
+  "title": "Example Recipe",
+  "description": "One-sentence summary of what this recipe demonstrates.",
+  "status": "draft",
+  "apis": ["task"],
+  "patterns": ["sync"],
+  "jtbd": ["starter"],
+  "languages": ["typescript"],
+  "deploy": ["cloudflare-workers"],
+  "demo_url": "https://example.com",
+  "creators": ["your-handle"]
+}
